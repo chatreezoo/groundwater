@@ -24,9 +24,9 @@ export default function EventCalendar() {
             label="ดูทั้งหมด"
             onChange={handleChange}
           >
-            <MenuItem value={10}> </MenuItem>
-            <MenuItem value={10}> </MenuItem>
-            <MenuItem value={10}> </MenuItem>
+            <MenuItem value={10}>item 1 </MenuItem>
+            <MenuItem value={10}>item 2 </MenuItem>
+            <MenuItem value={10}>item 3  </MenuItem>
           </Select>
         </FormControl>
       </Box>

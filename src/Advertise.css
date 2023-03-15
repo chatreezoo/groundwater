@@ -2,3 +2,6 @@
   height: 200px;
   width: 200px;
 }
+.test__icon.MuiSvgIcon-root {
+color: rgb(226, 250, 9);
+}
