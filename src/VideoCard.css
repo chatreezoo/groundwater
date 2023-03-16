@@ -7,28 +7,9 @@
 }
 
 .Card {
-  display: flex;
-}
-
-.Caed__low {
-  display: flex;
-}
-
-.Card_1 {
-  display: flex;
-  margin-top: 50px;
-  margin-left: 35px;
-}
-
-.Card_01 {
-  display: flex;
-  margin-top: 50px;
-}
-
-
-.Card_2 {
-  display: flex;
-  margin-left: 35px;
-  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
 
