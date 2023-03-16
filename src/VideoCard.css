@@ -1,0 +1,16 @@
+.VideoCard {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+
+}
+
+.Card {
+  display: flex;
+}
+
+.Card_2 {
+  display: flex;
+  margin-left: 40px;
+}
