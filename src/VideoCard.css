@@ -2,7 +2,7 @@
   margin-top: 50px;
   display: flex;
   flex-direction: column;
-  margin-left: 15px;
+  margin-left: 0px;
 
 }
 
@@ -10,7 +10,25 @@
   display: flex;
 }
 
+.Caed__low {
+  display: flex;
+}
+
+.Card_1 {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 35px;
+}
+
+.Card_01 {
+  display: flex;
+  margin-top: 50px;
+}
+
+
 .Card_2 {
   display: flex;
-  margin-left: 40px;
+  margin-left: 35px;
+  
 }
+

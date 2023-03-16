@@ -11,6 +11,7 @@ import MenuBookTwoToneIcon from "@mui/icons-material/MenuBookTwoTone";
 import FeedTwoToneIcon from "@mui/icons-material/FeedTwoTone";
 import "./Advertise.css";
 
+
 function Advertise() {
   const [news, setNews] = React.useState("");
   const [activity, setActivity] = React.useState("");
@@ -66,10 +67,7 @@ function Advertise() {
 
       <div className="Box__img">
         <div className="image">
-          <img
-            src="https://www.technologychaoban.com/wp-content/uploads/2018/01/%E0%B8%AA%E0%B8%81%E0%B8%B9%E0%B9%8A%E0%B8%9B-%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B8%9A%E0%B8%B2%E0%B8%94%E0%B8%B2%E0%B8%A5.jpg"
-            alt=""
-          />
+          <img src="images/logo.jpg" alt="" />
           <h2>อบรม หลักสูตร "เจาะน้ำบาดาล" ระดับ 1 รุ่นที่ 26</h2>
         </div>
         <div className="Box__list">
@@ -103,7 +101,7 @@ function Advertise() {
           <MenuBookTwoToneIcon className="test__icon" />
           <h2>บทเรียนทั้งหมด</h2>
           <ImportExportTwoToneIcon className="test__icon__below" />
-        <h2>เรียงตาม</h2>
+          <h2>เรียงตาม</h2>
         </div>
         <div>
           <Box className="Manu" sx={{ background: "yellow" }}>
@@ -127,7 +125,7 @@ function Advertise() {
         </div>
       </div>
       <div>
-        <hr/>
+        <hr />
         <VideoCard />
       </div>
     </div>
