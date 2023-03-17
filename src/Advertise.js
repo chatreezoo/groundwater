@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Activity from "./Activity";
-import { Select, MenuItem, FormControl } from "@mui/material";
+import { Select, MenuItem } from "@mui/material";
 import CalendarMonthTwoToneIcon from "@mui/icons-material/CalendarMonthTwoTone";
 import ImportExportTwoToneIcon from "@mui/icons-material/ImportExportTwoTone";
 import Box from "@mui/material/Box";
@@ -36,7 +36,7 @@ function Advertise() {
               alignItems: "center",
               justifyContent: "space-between",
               width: "100%",
-              marginTop: '50px'
+              marginTop: "50px",
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
@@ -44,22 +44,21 @@ function Advertise() {
               <h2>ข่าวประชาสัมพันธ์</h2>
             </div>
             <Box style={{ display: "flex" }}>
-              <FormControl fullWidth>
-                <Select
-                  value={news}
-                  onChange={handleChangeNews}
-                  sx={{
-                    background: "yellow",
-                    width: "130px",
-                    height: "40px",
-                    borderRadius: "8px",
-                  }}
-                >
-                  <MenuItem value="all">ดูทั้งหมด </MenuItem>
-                  <MenuItem value="lasted">ข่าวล่าสุด </MenuItem>
-                  <MenuItem value="oldest">ข่าวเก่า</MenuItem>
-                </Select>
-              </FormControl>
+              <Select
+                fullWidth
+                value={news}
+                onChange={handleChangeNews}
+                sx={{
+                  background: "yellow",
+                  width: "130px",
+                  height: "40px",
+                  borderRadius: "8px",
+                }}
+              >
+                <MenuItem value="all">ดูทั้งหมด </MenuItem>
+                <MenuItem value="lasted">ข่าวล่าสุด </MenuItem>
+                <MenuItem value="oldest">ข่าวเก่า</MenuItem>
+              </Select>
             </Box>
           </div>
         </div>
@@ -71,8 +70,7 @@ function Advertise() {
               alignItems: "center",
               justifyContent: "space-between",
               width: "100%",
-              marginTop: '50px'
-
+              marginTop: "50px",
             }}
           >
             <div style={{ display: "flex", alignItems: "center" }}>
@@ -81,22 +79,21 @@ function Advertise() {
             </div>
 
             <Box sx={{ display: "flex", alignItems: "center" }}>
-              <FormControl fullWidth>
-                <Select
-                  value={activity}
-                  onChange={handleChangeActivity}
-                  sx={{
-                    background: "yellow",
-                    width: "100px",
-                    height: "40px",
-                  }}
-                >
-                  <MenuItem value={0}>ดูทั้งหมด </MenuItem>
-                  <MenuItem value={10}>item 1 </MenuItem>
-                  <MenuItem value={20}>item 2 </MenuItem>
-                  <MenuItem value={30}>item 3 </MenuItem>
-                </Select>
-              </FormControl>
+              <Select
+                fullWidth
+                value={activity}
+                onChange={handleChangeActivity}
+                sx={{
+                  background: "yellow",
+                  width: "100px",
+                  height: "40px",
+                }}
+              >
+                <MenuItem value={0}>ดูทั้งหมด </MenuItem>
+                <MenuItem value={10}>item 1 </MenuItem>
+                <MenuItem value={20}>item 2 </MenuItem>
+                <MenuItem value={30}>item 3 </MenuItem>
+              </Select>
             </Box>
           </div>
         </div>
@@ -126,22 +123,21 @@ function Advertise() {
           <ImportExportTwoToneIcon className="test__icon__below" />
           <h2>เรียงตาม</h2>
           <Box className="Manu">
-            <FormControl fullWidth>
-              <Select
-                value={video}
-                onChange={handleChangeVideo}
-                sx={{
-                  background: "yellow",
-                  width: "100px",
-                  height: "40px",
-                }}
-              >
-                <MenuItem value={0}>ดูทั้งหมด </MenuItem>
-                <MenuItem value={10}>item 1 </MenuItem>
-                <MenuItem value={20}>item 2 </MenuItem>
-                <MenuItem value={30}>item 3 </MenuItem>
-              </Select>
-            </FormControl>
+            <Select
+              fullWidth
+              value={video}
+              onChange={handleChangeVideo}
+              sx={{
+                background: "yellow",
+                width: "100px",
+                height: "40px",
+              }}
+            >
+              <MenuItem value={0}>ดูทั้งหมด </MenuItem>
+              <MenuItem value={10}>item 1 </MenuItem>
+              <MenuItem value={20}>item 2 </MenuItem>
+              <MenuItem value={30}>item 3 </MenuItem>
+            </Select>
           </Box>
         </div>
       </div>
