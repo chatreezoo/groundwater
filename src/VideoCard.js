@@ -51,7 +51,7 @@ function VideoCard() {
     <div className="VideoCard">
       <div className="Card">
         {data?.map((item, index) => ((
-          <VideoRow key={index} image={item.image} title={item.title} explain={item.explain}   />
+          <VideoRow className="image"  key={index} image={item.image} title={item.title} explain={item.explain}   />
         )))}
       </div>
     </div>

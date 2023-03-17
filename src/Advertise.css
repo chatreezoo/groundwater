@@ -41,7 +41,7 @@
   background-color: rgb(231, 241, 241);
   border-radius: 8px;
   height: 600px;
-  width: 670px;
+  width: 750px;
   margin-left: 100px;
   margin-right: 50px;
 }
@@ -88,9 +88,8 @@
 }
 
 .Manu {
-  margin-left: 30px;
-  width: 120px;
-  height: 55px;
+  margin-left: 45px;
+  margin-top: 20px;
 }
 
 .test__icon.MuiSvgIcon-root {
@@ -108,9 +107,13 @@
 
 .below__header {
   display: flex;
-  margin-left: 25px;
-  
+    
 }
+
+.Select {
+  display: flex;
+}
+
 .test__icon__below.MuiSvgIcon-root {
   width: 50px;
   height: 50px;

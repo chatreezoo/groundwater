@@ -1,4 +1,5 @@
 import React from "react";
+import Activity from "./Activity";
 import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
@@ -11,9 +12,8 @@ import MenuBookTwoToneIcon from "@mui/icons-material/MenuBookTwoTone";
 import FeedTwoToneIcon from "@mui/icons-material/FeedTwoTone";
 import "./Advertise.css";
 
-
 function Advertise() {
-  const [news, setNews] = React.useState("");
+  const [news, setNews] = React.useState(0);
   const [activity, setActivity] = React.useState("");
   const [video, setVideo] = React.useState("");
   const handleChange = (event) => {
@@ -28,16 +28,20 @@ function Advertise() {
         <FeedTwoToneIcon className="test__icon" />
         <h2>ข่าวประชาสัมพันธ์</h2>
 
-        <Box className="Manu" sx={{ background: "yellow" }}>
+        <Box className="Manu">
           <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">ดูทั้งหมด</InputLabel>
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
               value={news}
-              label="ดูทั้งหมด"
               onChange={handleChange}
+              sx={{
+                background: "yellow",
+                width: "150px",
+                height: "40px",
+              }}
             >
+              <MenuItem value={0}>ดูทั้งหมด </MenuItem>
               <MenuItem value={10}>item 1 </MenuItem>
               <MenuItem value={20}>item 2 </MenuItem>
               <MenuItem value={30}>item 3 </MenuItem>
@@ -47,7 +51,7 @@ function Advertise() {
 
         <CalendarMonthTwoToneIcon className="icon__Calender" />
         <h2>ปฎิทินกิจกรรม</h2>
-        <Box className="Manu" sx={{ background: "yellow" }}>
+        <Box className="Manu">
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">ดูทั้งหมด</InputLabel>
             <Select
@@ -56,6 +60,11 @@ function Advertise() {
               value={activity}
               label="ดูทั้งหมด"
               onChange={handleChange}
+              sx={{
+                background: "yellow",
+                width: "100px",
+                height: "40px",
+              }}
             >
               <MenuItem value={10}>item 1 </MenuItem>
               <MenuItem value={20}>item 2 </MenuItem>
@@ -73,24 +82,7 @@ function Advertise() {
         <div className="Box__list">
           <div className="list">
             <div className="Text__list">
-              <h1>23 ม.ค.66</h1>
-              <h3>อบรม หลักสูตร "ช่างเจาะน้ำบาดาล" ระดับ 1 รุ่นที่ 26</h3>
-            </div>
-            <div className="Text__list">
-              <h1>24 ม.ค.66</h1>
-              <h3>อบรม หลักสูตร "ช่างเจาะน้ำบาดาล" ระดับ 1 รุ่นที่ 26</h3>
-            </div>
-            <div className="Text__list">
-              <h1>25 ม.ค.66</h1>
-              <h3>อบรม หลักสูตร "ช่างเจาะน้ำบาดาล" ระดับ 1 รุ่นที่ 26</h3>
-            </div>
-            <div className="Text__list">
-              <h1>26 ม.ค.66</h1>
-              <h3>อบรม หลักสูตร "ช่างเจาะน้ำบาดาล" ระดับ 1 รุ่นที่ 26</h3>
-            </div>
-            <div className="Text__list">
-              <h1>27 ม.ค.66</h1>
-              <h3>อบรม หลักสูตร "ช่างเจาะน้ำบาดาล" ระดับ 1 รุ่นที่ 26</h3>
+              <Activity />
             </div>
           </div>
         </div>
@@ -100,11 +92,11 @@ function Advertise() {
         <div className="below__header">
           <MenuBookTwoToneIcon className="test__icon" />
           <h2>บทเรียนทั้งหมด</h2>
+        </div>
+        <div className="Select">
           <ImportExportTwoToneIcon className="test__icon__below" />
           <h2>เรียงตาม</h2>
-        </div>
-        <div>
-          <Box className="Manu" sx={{ background: "yellow" }}>
+          <Box className="Manu">
             <FormControl fullWidth>
               <InputLabel id="demo-simple-select-label">
                 วิดีโอล่าสุด
@@ -115,6 +107,11 @@ function Advertise() {
                 value={video}
                 label="วิดีโอล่าสุด"
                 onChange={handleChange}
+                sx={{
+                  background: "yellow",
+                  width: "100px",
+                  height: "40px",
+                }}
               >
                 <MenuItem value={10}>item 1 </MenuItem>
                 <MenuItem value={20}>item 2 </MenuItem>
