@@ -1,9 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Activity from "./Activity";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import InputLabel from "@mui/material/InputLabel";
+import { Select, MenuItem, FormControl } from "@mui/material";
 import CalendarMonthTwoToneIcon from "@mui/icons-material/CalendarMonthTwoTone";
 import ImportExportTwoToneIcon from "@mui/icons-material/ImportExportTwoTone";
 import Box from "@mui/material/Box";
@@ -13,65 +10,96 @@ import FeedTwoToneIcon from "@mui/icons-material/FeedTwoTone";
 import "./Advertise.css";
 
 function Advertise() {
-  const [news, setNews] = React.useState(0);
-  const [activity, setActivity] = React.useState("");
-  const [video, setVideo] = React.useState("");
-  const handleChange = (event) => {
+  const [news, setNews] = useState("all");
+  const [activity, setActivity] = useState("");
+  const [video, setVideo] = useState("");
+
+  const handleChangeNews = (event) => {
     setNews(event.target.value);
+  };
+
+  const handleChangeActivity = (event) => {
     setActivity(event.target.value);
+  };
+
+  const handleChangeVideo = (event) => {
     setVideo(event.target.value);
   };
 
   return (
     <div className="Advertise">
-      <div className="Box__Top">
-        <FeedTwoToneIcon className="test__icon" />
-        <h2>ข่าวประชาสัมพันธ์</h2>
+      <div className="container__top">
+        <div className="container__left">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              width: "100%",
+              marginTop: '50px'
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <FeedTwoToneIcon className="test__icon" />
+              <h2>ข่าวประชาสัมพันธ์</h2>
+            </div>
+            <Box style={{ display: "flex" }}>
+              <FormControl fullWidth>
+                <Select
+                  value={news}
+                  onChange={handleChangeNews}
+                  sx={{
+                    background: "yellow",
+                    width: "130px",
+                    height: "40px",
+                    borderRadius: "8px",
+                  }}
+                >
+                  <MenuItem value="all">ดูทั้งหมด </MenuItem>
+                  <MenuItem value="lasted">ข่าวล่าสุด </MenuItem>
+                  <MenuItem value="oldest">ข่าวเก่า</MenuItem>
+                </Select>
+              </FormControl>
+            </Box>
+          </div>
+        </div>
 
-        <Box className="Manu">
-          <FormControl fullWidth>
-            <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={news}
-              onChange={handleChange}
-              sx={{
-                background: "yellow",
-                width: "150px",
-                height: "40px",
-              }}
-            >
-              <MenuItem value={0}>ดูทั้งหมด </MenuItem>
-              <MenuItem value={10}>item 1 </MenuItem>
-              <MenuItem value={20}>item 2 </MenuItem>
-              <MenuItem value={30}>item 3 </MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
+        <div className="container__right">
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              width: "100%",
+              marginTop: '50px'
 
-        <CalendarMonthTwoToneIcon className="icon__Calender" />
-        <h2>ปฎิทินกิจกรรม</h2>
-        <Box className="Manu">
-          <FormControl fullWidth>
-            <InputLabel id="demo-simple-select-label">ดูทั้งหมด</InputLabel>
-            <Select
-              labelId="demo-simple-select-label"
-              id="demo-simple-select"
-              value={activity}
-              label="ดูทั้งหมด"
-              onChange={handleChange}
-              sx={{
-                background: "yellow",
-                width: "100px",
-                height: "40px",
-              }}
-            >
-              <MenuItem value={10}>item 1 </MenuItem>
-              <MenuItem value={20}>item 2 </MenuItem>
-              <MenuItem value={30}>item 3 </MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <CalendarMonthTwoToneIcon className="icon__Calender" />
+              <h2>ปฎิทินกิจกรรม</h2>
+            </div>
+
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <FormControl fullWidth>
+                <Select
+                  value={activity}
+                  onChange={handleChangeActivity}
+                  sx={{
+                    background: "yellow",
+                    width: "100px",
+                    height: "40px",
+                  }}
+                >
+                  <MenuItem value={0}>ดูทั้งหมด </MenuItem>
+                  <MenuItem value={10}>item 1 </MenuItem>
+                  <MenuItem value={20}>item 2 </MenuItem>
+                  <MenuItem value={30}>item 3 </MenuItem>
+                </Select>
+              </FormControl>
+            </Box>
+          </div>
+        </div>
       </div>
 
       <div className="Box__img">
@@ -88,31 +116,27 @@ function Advertise() {
         </div>
       </div>
 
-      <div className="Box__below">
-        <div className="below__header">
+      <div className="filter__box">
+        <div className="filter__title">
           <MenuBookTwoToneIcon className="test__icon" />
           <h2>บทเรียนทั้งหมด</h2>
         </div>
+
         <div className="Select">
           <ImportExportTwoToneIcon className="test__icon__below" />
           <h2>เรียงตาม</h2>
           <Box className="Manu">
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label">
-                วิดีโอล่าสุด
-              </InputLabel>
               <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
                 value={video}
-                label="วิดีโอล่าสุด"
-                onChange={handleChange}
+                onChange={handleChangeVideo}
                 sx={{
                   background: "yellow",
                   width: "100px",
                   height: "40px",
                 }}
               >
+                <MenuItem value={0}>ดูทั้งหมด </MenuItem>
                 <MenuItem value={10}>item 1 </MenuItem>
                 <MenuItem value={20}>item 2 </MenuItem>
                 <MenuItem value={30}>item 3 </MenuItem>

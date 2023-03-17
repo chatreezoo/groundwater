@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin-left: 10%;
+  margin: 0 auto;
 }
+
 .Box__Top {
   display: flex;
   margin-top: 50px;
-  margin-left: 20px;
 }
 
 .Box__Top > h2 {
@@ -54,7 +54,6 @@
   height: 540px;
   flex: 0.25;
   overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 .list {
@@ -79,24 +78,14 @@
 }
 
 .icon__Calender.MuiSvgIcon-root {
-  margin-left: 174px;
   width: 50px;
   height: 50px;
-  margin-top: 10px;
-  margin-right: 10px;
   color: rgb(226, 250, 9);
-}
-
-.Manu {
-  margin-left: 45px;
-  margin-top: 20px;
 }
 
 .test__icon.MuiSvgIcon-root {
   width: 50px;
   height: 50px;
-  margin-top: 10px;
-  margin-right: 30px;
   color: rgb(226, 250, 9);
 }
 /* วิดีโอ */
@@ -105,22 +94,45 @@
   margin-top: 70px;
 }
 
-.below__header {
-  display: flex;
-    
-}
-
 .Select {
   display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .test__icon__below.MuiSvgIcon-root {
   width: 50px;
   height: 50px;
-  margin-top: 10px;
-  margin-left: 920px;
   color: rgb(226, 250, 9);
 }
+
+.filter__box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter__title{
+  display: flex;
+}
+
+.container__top{
+  display: flex;
+  height: 50%;
+}
+.container__left{
+  flex: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27, 204, 27);
+}
+.container__right{
+  flex: 0.5;
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+}
+
 
 
 
