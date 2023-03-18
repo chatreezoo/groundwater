@@ -1,12 +1,21 @@
 .col {
+  height: 80px;
+  padding-top: 12px;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid rgb(209, 208, 204);
+
+}
+.col > h3 {
+  margin-left: 10px;
 }
 
 
-.col > h1 {
+.col > h2 {
   text-align: center;
   width: 100px;
   background-color: rgb(246, 250, 9);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 

@@ -10,14 +10,18 @@ function VideoRow({ image, title, explain }) {
       <h3>{title}</h3>
       <p>{explain}</p>
       <hr />
-      <div className="ster">
-        <StarRoundedIcon className="ster" />
-        <StarRoundedIcon className="ster" />
-        <StarRoundedIcon className="ster" />
-        <StarRoundedIcon className="ster" />
-        <StarHalfTwoToneIcon className="ster" />
-        (4.5)
-        <ShareRoundedIcon className="shar" />
+      <div className="star">
+        <div className="poit" >
+          <StarRoundedIcon/>
+          <StarRoundedIcon/>
+          <StarRoundedIcon/>
+          <StarRoundedIcon/>
+          <StarHalfTwoToneIcon />
+          (4.5)
+        </div>
+        <div className="shar">
+          <ShareRoundedIcon />
+        </div>
       </div>
     </div>
   );

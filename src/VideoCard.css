@@ -8,8 +8,8 @@
 
 .Card {
   display: grid;
-  grid-template-columns: repeat(4, 300px);
-  gap: 90px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   grid-auto-rows: minmax(10px, auto);
 }
 

@@ -131,12 +131,11 @@ function Advertise() {
               value={video}
               onChange={handleChangeVideo}
               sx={{
-                background: "yellow",
-                width: "120px",
-                height: "40px",
+                width: "160px",
+                height: "45px",
               }}
             >
-              <MenuItem value={0}>ดูทั้งหมด </MenuItem>
+              <MenuItem value={0}>วิดีโอล่าสุด </MenuItem>
               <MenuItem value={10}>item 1 </MenuItem>
               <MenuItem value={20}>item 2 </MenuItem>
               <MenuItem value={30}>item 3 </MenuItem>

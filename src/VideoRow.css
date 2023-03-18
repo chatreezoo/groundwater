@@ -1,12 +1,12 @@
 .Video {
   border-radius: 8px;
-  border:1px solid rgb(198, 202, 202)
+  border: 1px solid rgb(198, 202, 202);
 }
 
 .Video > img {
   border-radius: 8px;
-  width: 300px;
-  height: 250px;
+  width: 100%;
+  height: 300px;
 }
 
 .Video > h3 {
@@ -16,16 +16,21 @@
   margin-left: 10px;
 }
 
-.ster {
+.star {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+
+.poit {
   display: flex;
 }
 
-.ster.MuiSvgIcon-root {
-  margin-left: 2px;
-  color: rgb(226, 250, 9)
-  
+.star .MuiSvgIcon-root {
+  color: rgb(226, 250, 9);
 }
-.shar.MuiSvgIcon-root {
-  margin-left: 80px;
-  color: rgb(226, 250, 9)
+.shar .MuiSvgIcon-root {
+  margin-right: 10px;
+  color: rgb(226, 250, 9);
 }
