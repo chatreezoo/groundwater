@@ -14,23 +14,27 @@
   margin-right: 250px;
 }
 
-.Box__img {
+.Box__center {
+  margin-top: 30px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
 .image {
   width: 670px;
+  height: 600px;
+  border: 1px solid rgb(212, 204, 204);
   flex-direction: column;
   flex-direction: row;
   border-radius: 8px;
-  background-color: rgb(231, 241, 241);
-  margin-left: 20px;
-  margin-right: 50px;
 }
 
 .image > img {
   height: 500px;
   width: 670px;
+  border-radius: 8px;
 }
 
 .image > h2 {
@@ -38,12 +42,12 @@
 }
 
 .Box__list {
-  background-color: rgb(231, 241, 241);
+  flex: 0.5;
+  border: 1px solid rgb(212, 204, 204);
   border-radius: 8px;
   height: 600px;
   width: 750px;
-  margin-left: 100px;
-  margin-right: 50px;
+  
 }
 
 .list {
@@ -56,25 +60,16 @@
   overflow-y: scroll;
 }
 
-.list {
-  display: flex;
-  flex-direction: column;
-}
-
 .Text__list {
   display: flex;
+  flex: 0.5;
 }
 
 .Text__list > h1 {
   display: flex;
   text-align: center;
   width: 100px;
-  background-color: rgb(229, 245, 10);
-}
-
-.Text__list > h3 {
-  margin-top: 50px;
-  margin-left: 10px;
+  background-color: rgb(252, 248, 4);
 }
 
 .icon__Calender.MuiSvgIcon-root {
@@ -84,10 +79,12 @@
 }
 
 .test__icon.MuiSvgIcon-root {
+  margin-top: 10px;
   width: 50px;
   height: 50px;
   color: rgb(226, 250, 9);
 }
+
 /* วิดีโอ */
 .Box__below {
   display: flex;
@@ -103,38 +100,35 @@
 .test__icon__below.MuiSvgIcon-root {
   width: 50px;
   height: 50px;
-  color: rgb(226, 250, 9);
+  color: rgb(246, 250, 9);
+  
 }
 
-.filter__box{
+.filter__box {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.filter__title{
+.filter__title {
   display: flex;
 }
 
-.container__top{
+.filter__title > h2 {
+  margin-left: 10px;
+}
+
+.container__top {
   display: flex;
   height: 50%;
 }
-.container__left{
+.container__left {
   flex: 0.5;
   width: 100%;
   height: 100%;
-  background-color: rgb(27, 204, 27);
 }
-.container__right{
+.container__right {
   flex: 0.5;
   width: 100%;
   height: 100%;
-  background-color: brown;
 }
-
-
-
-
-
-

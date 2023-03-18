@@ -11,8 +11,8 @@ import "./Advertise.css";
 
 function Advertise() {
   const [news, setNews] = useState("all");
-  const [activity, setActivity] = useState("");
-  const [video, setVideo] = useState("");
+  const [activity, setActivity] = useState(0);
+  const [video, setVideo] = useState(0);
 
   const handleChangeNews = (event) => {
     setNews(event.target.value);
@@ -31,6 +31,7 @@ function Advertise() {
       <div className="container__top">
         <div className="container__left">
           <div
+            className="Loo"
             style={{
               display: "flex",
               alignItems: "center",
@@ -50,7 +51,8 @@ function Advertise() {
                 onChange={handleChangeNews}
                 sx={{
                   background: "yellow",
-                  width: "130px",
+                  marginRight:"55px",
+                  width: "120px",
                   height: "40px",
                   borderRadius: "8px",
                 }}
@@ -85,8 +87,9 @@ function Advertise() {
                 onChange={handleChangeActivity}
                 sx={{
                   background: "yellow",
-                  width: "100px",
+                  width: "120px",
                   height: "40px",
+                  borderRadius: "8px",
                 }}
               >
                 <MenuItem value={0}>ดูทั้งหมด </MenuItem>
@@ -99,7 +102,7 @@ function Advertise() {
         </div>
       </div>
 
-      <div className="Box__img">
+      <div className="Box__center">
         <div className="image">
           <img src="images/logo.jpg" alt="" />
           <h2>อบรม หลักสูตร "เจาะน้ำบาดาล" ระดับ 1 รุ่นที่ 26</h2>
@@ -129,7 +132,7 @@ function Advertise() {
               onChange={handleChangeVideo}
               sx={{
                 background: "yellow",
-                width: "100px",
+                width: "120px",
                 height: "40px",
               }}
             >

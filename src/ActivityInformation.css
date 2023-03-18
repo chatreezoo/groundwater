@@ -1,5 +1,12 @@
+.col {
+  display: flex;
+  align-items: center;
+}
+
+
 .col > h1 {
   text-align: center;
   width: 100px;
-background-color: rgb(207, 247, 33);
+  background-color: rgb(246, 250, 9);
 }
+

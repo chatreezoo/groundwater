@@ -6,7 +6,7 @@
 .Video > img {
   border-radius: 8px;
   width: 300px;
-  height: 300px;
+  height: 250px;
 }
 
 .Video > h3 {
@@ -14,4 +14,18 @@
 }
 .Video > p {
   margin-left: 10px;
+}
+
+.ster {
+  display: flex;
+}
+
+.ster.MuiSvgIcon-root {
+  margin-left: 2px;
+  color: rgb(226, 250, 9)
+  
+}
+.shar.MuiSvgIcon-root {
+  margin-left: 80px;
+  color: rgb(226, 250, 9)
 }
