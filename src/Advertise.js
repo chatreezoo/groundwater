@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Activity from "./Activity";
+import ImagesSlide from "./ImagesSlide";
 import { Select, MenuItem } from "@mui/material";
 import CalendarMonthTwoToneIcon from "@mui/icons-material/CalendarMonthTwoTone";
 import ImportExportTwoToneIcon from "@mui/icons-material/ImportExportTwoTone";
@@ -104,7 +105,7 @@ function Advertise() {
 
       <div className="Box__center">
         <div className="image">
-          <img src="images/logo.jpg" alt="" />
+          <ImagesSlide/>
           <h2>อบรม หลักสูตร "เจาะน้ำบาดาล" ระดับ 1 รุ่นที่ 26</h2>
         </div>
         <div className="Box__list">
