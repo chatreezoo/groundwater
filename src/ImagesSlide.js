@@ -1,13 +1,7 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
-// import "..public/images/logo.jpg";
+// Use lib https://www.npmjs.com/package/react-image
 import "react-slideshow-image/dist/styles.css";
-
-const spanStyle = {
-  padding: "20px",
-  background: "#efefef",
-  color: "#000000",
-};
 
 const divStyle = {
   display: "flex",
@@ -18,20 +12,20 @@ const divStyle = {
 };
 const slideImages = [
   {
-    url:"images/logo.jpg"
+    url: "images/logo.jpg",
   },
   {
-    url:"images/logo1.jpg"
+    url: "images/logo1.jpg",
   },
   {
-    url:"images/logo2.jpg"
+    url: "images/logo2.jpg",
   },
   {
-    url:"images/logo3.jpg"
+    url: "images/logo3.jpg",
   },
   {
-    url:"images/logo4.jpg"
-  }
+    url: "images/logo4.jpg",
+  },
 ];
 
 const ImagesSlide = () => {
