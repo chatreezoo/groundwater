@@ -1,6 +1,6 @@
 import React from "react";
 import { Slide } from "react-slideshow-image";
-// Use lib https://www.npmjs.com/package/react-image
+// Use lib https://www.npmjs.com/package/react-slideshow-image
 import "react-slideshow-image/dist/styles.css";
 
 const divStyle = {
@@ -9,6 +9,7 @@ const divStyle = {
   justifyContent: "center",
   backgroundSize: "cover",
   height: "400px",
+  width:  "100%"
 };
 const slideImages = [
   {
@@ -30,7 +31,7 @@ const slideImages = [
 
 const ImagesSlide = () => {
   return (
-    <div className="slide-container">
+    
       <Slide>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
@@ -40,7 +41,7 @@ const ImagesSlide = () => {
           </div>
         ))}
       </Slide>
-    </div>
+    
   );
 };
 
