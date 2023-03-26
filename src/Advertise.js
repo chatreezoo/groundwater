@@ -35,7 +35,17 @@ function Advertise() {
               <FeedTwoToneIcon className="test__icon" />
               <h2>ข่าวประชาสัมพันธ์</h2>
             </div>
-            <button className="button">ดูทั้งหมด</button>
+            <button
+              className="button"
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href =
+                  "https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjD-pGR4fn9AhWMSmwGHTlkDxsQPAgI";
+              }}
+            >
+              ดูทั้งหมด
+            </button>
           </div>
         </div>
 
@@ -53,7 +63,17 @@ function Advertise() {
               <CalendarMonthTwoToneIcon className="icon__Calender" />
               <h2>ปฎิทินกิจกรรม</h2>
             </div>
-            <button className="button">ดูทั้งหมด</button>
+            <button
+              className="button"
+              type="button"
+              onClick={(e) => {
+                e.preventDefault();
+                window.location.href =
+                  "https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjD-pGR4fn9AhWMSmwGHTlkDxsQPAgI";
+              }}
+            >
+              ดูทั้งหมด
+            </button>
           </div>
         </div>
       </div>
